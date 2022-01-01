@@ -8,4 +8,8 @@ I have created a Dockerfile along with a docker-compose.yml file to build the do
 ```
 docker-compose up --build
 ``` 
-to build the docker container from the image references in the Dockerfile using the docker-compose.yml file. The docker-compose.yml file defines the services required for AirFlow to work. This includes a PostgresQL database, as well as the webserver (UI) from "puckel/docker-airflow:1.10.9" docker image from dockerhub. Ensure you put all DAGs in the "~/project/dags" folder since this is the directory that gets mounted to the volume where AirFlow searches for DAG configurations. If you create a DAG (or edit an existing DAG) please run `docker-compose down` to stop and remove the existing container.
+to build the docker container from the image references in the Dockerfile using the docker-compose.yml file. The docker-compose.yml file defines the services required for AirFlow to work. This includes a PostgresQL database, as well as the webserver (UI) from "puckel/docker-airflow:1.10.9" docker image from dockerhub. Ensure you put all DAGs in the "~/project/dags" folder since this is the directory that gets mounted to the volume where AirFlow searches for DAG configurations. If you create a DAG (or edit an existing DAG) please run: 
+```
+docker-compose down
+``` 
+to stop and remove the existing container.
