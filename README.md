@@ -4,7 +4,7 @@
 This is a personal exploration with Apache Airflow for data engineering purposes. The DAG I have created so far is very simplistic, however it highlights the basics of using Apache Airflow with a PythonOperator.
 
 ## Docker Containers (how to run)
-I have created a Dockerfile along with a docker-compose.yml file to build the docker container. To spin up the docker container, first ensure that you have partitioned enough memory (at least 4GB, I did 8GB) in the Docker resources menu. Once you have done that, run:
+I have created a Dockerfile along with a docker-compose.yml file to build the docker container. To spin up the docker container, first ensure that you have partitioned enough memory (at least 4GB, I did 8GB) in the Docker resources menu. Once you have done that, from the '~/LearnAirflow/project' directory run:
 ```
 docker-compose up --build
 ``` 
